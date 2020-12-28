@@ -1,0 +1,15 @@
+version: '2'
+services:
+  app:
+    image:
+    restart: always
+    environment:
+      TG_TOKEN:
+      URL_RSS:
+      CHANNEL_ID:
+    volumes:
+      - data:/data
+
+volumes:
+  data:
+    driver: local
